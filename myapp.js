@@ -352,11 +352,11 @@
 // true
 // 10 == 100
 // false
-"hello" == "hello"
+//"hello" == "hello"
 // true
-"hello" == "HELLO"
+//"hello" == "HELLO"
 // false
-NaN == NaN
+//NaN == NaN
 // false
 //* Polymorphism?
 // Polymorphism is a programming concept that allows you to write code that can work with different types of data without having to rewrite the code for each type. In JavaScript, polymorphism is achieved through the use of inheritance and interfaces.
@@ -368,23 +368,52 @@ NaN == NaN
 //! If Statements
 //* &&: and
 //* ||: or
-var carsLeft = 1,
-    carsRight = 0,
-    greenMan = "yes";
+// var carsLeft = 1,
+//     carsRight = 0,
+//     greenMan = "yes";
 
-if ( greenMan ===  "yes" ){
-    console.log( 'cross the road' );
-}
-else if (greenMan === "yes" && (carsLeft === 0 || carsRight === 0 )){
-    console.log( 'All clear! Cross the road' );
-}
-else {
-    console.log( 'Stay where you are!')
-}
+// if ( greenMan ===  "yes" ){
+//     console.log( 'cross the road' );
+// }
+// else if (greenMan === "yes" && (carsLeft === 0 || carsRight === 0 )){
+//     console.log( 'All clear! Cross the road' );
+// }
+// else {
+//     console.log( 'Stay where you are!')
+// }
 
 //! For & For in loops
-var classRegister = ["Lawrence", "John", "Jeff"];
+// var classRegister = ["Lawrence", "John", "Jeff", ];
 
-console.log( classRegister[0] );
-console.log( classRegister[1] );
-console.log( classRegister[2] );
+// console.log( classRegister[0] );
+// console.log( classRegister[1] );
+// console.log( classRegister[2] );
+
+// for( var i = 0; i < classRegister.length; i++ ) {
+//     console.log( classRegister[i] );
+// }
+
+// for( var k = classRegister.length - 1; k >= 0; k-- ){
+//     console.log( classRegister[k]);
+// }
+
+//! For in loops
+// for( var index in classRegister ){
+//     console.log( classRegister[ index ] );
+// }
+
+//! ES6 Ecma Script 6
+//* When using for loops use let
+var symbolName = "value reference in memory";
+
+let letSymbol = "scoped value";
+
+const symName = "Constant value in memeory"
+
+if (true){
+    var symbolName = "value reference in memory";
+
+    let letSymbol = "scoped value";
+
+    const symName = "Constant value in memeory"
+}
