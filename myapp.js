@@ -348,9 +348,9 @@
 //! SECTION 3
 //! Comparison Operators
 //* ==: compares the left to the right. It's case sensitive
-10 == 10;
+// 10 == 10;
 // true
-10 == 100
+// 10 == 100
 // false
 "hello" == "hello"
 // true
@@ -366,16 +366,25 @@ NaN == NaN
 
 
 //! If Statements
+//* &&: and
+//* ||: or
 var carsLeft = 1,
     carsRight = 0,
-    greenMan = "no";
+    greenMan = "yes";
 
-if ( greenMan === "yes" ){
+if ( greenMan ===  "yes" ){
     console.log( 'cross the road' );
 }
-else if (carsLeft === 0){
+else if (greenMan === "yes" && (carsLeft === 0 || carsRight === 0 )){
     console.log( 'All clear! Cross the road' );
 }
 else {
     console.log( 'Stay where you are!')
 }
+
+//! For & For in loops
+var classRegister = ["Lawrence", "John", "Jeff"];
+
+console.log( classRegister[0] );
+console.log( classRegister[1] );
+console.log( classRegister[2] );
