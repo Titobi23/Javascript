@@ -404,16 +404,67 @@
 
 //! ES6 Ecma Script 6
 //* When using for loops use let
-var symbolName = "value reference in memory";
+// var symbolName = "value reference in memory";
 
-let letSymbol = "scoped value";
+// let letSymbol = "scoped value";
 
-const symName = "Constant value in memeory"
+// const symName = "Constant value in memeory"
 
-if (true){
-    var symbolName = "value reference in memory";
+// if (true){
+//     var symbolName = "value reference in memory";
 
-    let letSymbol = "scoped value";
+//     let letSymbol = "scoped value";
 
-    const symName = "Constant value in memeory"
-}
+//     const symName = "Constant value in memeory"
+// }
+
+//! Changing Elements Content
+// var pHello = document.getElementById('hello');
+    
+// pHello.innerText = "new world";
+
+// pHello.innerHTML += " order <span>hello world</span>";
+
+// pHello.outerHTML = '<h2 id="hello">new world order <span>hello world</span></h2>';
+
+// var spanH1 = document.querySelectorAll('h1 span');
+
+// spanH1[0].innerHTML = "new text here!!";
+
+//! Changing Elements Style
+// var el = document.getElementById('style');
+
+// el.style.background = "blue";
+// el.style.color = "white";
+// el.style.width = "200px";
+
+// el.style.cssText = "background:blue; color:white; width:200px";
+
+// el.style.cssText += "height:100px;"
+
+// console.log(getComputedStyle( el ));
+
+//! Event Handlers
+// var select = document.getElementsByName('cars')[0];
+
+// select.onclick = function( event ){
+//     console.log(event);
+// };
+
+// select.addEventListener('click', function(){
+
+//     console.log( 'clicked by add event listener');
+// });
+
+//! Create and appendChild and insertBefore methods
+var element = document.createElement('div');
+
+element.style.cssText = "width:200px; height:20px; background:blue;";
+
+element.onclick = function(){ alert('hello');};
+
+// document.body.appendChild( element );
+
+var target = document.getElementById('yellow')
+
+document.body.insertBefore(element, target);
